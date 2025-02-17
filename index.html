@@ -25,26 +25,92 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container header-container">
-      <nav class="header-nav">
-        <a class="logo header-logo" href="./index.html"
-        >Web<span class="logo-part">Studio</span></a>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link current" href="./index.html">Studio</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-
-      <address class="contacts">
-        <ul class="contacts-list">
-          <li class="contacts-item"><a class="contacts-link"  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-        </ul>
-      </address>
+       <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html"
+          >Web<span class="logo-part">Studio</span></a>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link current" href="./index.html">Studio</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item"><a class="contacts-link"  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+      <button class="burger-button" type="button">
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="mob-menu">
+        <div class="container mob-menu-container">
+          <button type="button" class="mob-close-button">
+            <svg class="mob-close-icon" width="8" height="8">
+              <use href=""></use>
+            </svg>
+          </button>
+          <nav class="mob-menu-nav">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-address">
+            <ul class="mob-address-list">
+              <li class="mob-address-item">
+                <a class="mob-address-link" href="tel:+110001111111">+11 (000) 111-11-11"</a>
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-element-list">
+            <li class="mob-element-item">
+              <a href="" class="mob-element-link">
+                <svg class="mob-element-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-element-item">
+              <a href="" class="mob-element-link">
+                <svg class="mob-element-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-element-item">
+              <a href="" class="mob-element-link">
+                <svg class="mob-element-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-element-item">
+              <a href="" class="mob-element-link">
+                <svg class="mob-element-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <main>
+   <main>
       <section class="hero-image">
         <div class="container hero-container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -53,7 +119,7 @@
     </section>
    <section class="section-one">
     <div class="container">
-        <h2 class="visually-hidden" >Our Advantages</h2>
+        <h2 class="visually-hidden">Our Advantages</h2>
         <ul class="section-one-list">
           <li class="section-one-item">
             <div class="icon-container">
@@ -107,7 +173,7 @@
         <h2 class="ourteam-title">Our Team</h2>
         <ul class="ourteam-list list">
           <li class="ot-team-list">
-            <img src="./images/mark.jpg" alt="mark" width="264"/>
+            <img src="./images/mark.jpg" srcset="./images/team/mark-1x-min.jpg 1x, ./images/team/mark-2x-min.jpg 2x" alt="mark" width="264"/>
             <div class="div-class">
             <h3 class="ot-name">Mark Guerrero</h3>
             <p class="ot-info">Product Designer</p>
@@ -144,7 +210,7 @@
             </div>
           </li>
           <li class="ot-team-list">
-            <img src="./images/tom.jpg" alt="tom" width="264" />
+            <img src="./images/tom.jpg" srcset="./images/team/tom-1x-min.jpg 1x, ./images/team/tom-2x-min.jpg 2x" alt="tom" width="264" />
             <div class="div-class">
             <h3 class="ot-name">Tom Ford</h3>
             <p class="ot-info">Frontend Developer</p>
@@ -181,7 +247,7 @@
             </div>
           </li>
           <li class="ot-team-list">
-            <img src="./images/camila.jpg" alt="camila"  width="264" />
+            <img src="./images/camila.jpg"  srcset="./images/team/camila-1x-min.jpg 1x, ./images/team/camila-2x-min.jpg 2x" alt="camila"  width="264" />
             <div class="div-class">
             <h3 class="ot-name">Camila Garcia</h3>
             <p class="ot-info">Marketing</p>
@@ -218,7 +284,7 @@
             </div>
           </li>
           <li class="ot-team-list">
-            <img src="./images/daniel.jpg" alt="daniel" width="264" />
+            <img src="./images/daniel.jpg"  srcset="./images/team/daniel-1x-min.jpg 1x, ./images/team/daniel-2x-min.jpg 2x" alt="daniel" width="264" />
             <div class="div-class">
             <h3 class="ot-name">Daniel Wilson</h3>
             <p class="ot-info">UI Designer</p>
@@ -330,7 +396,7 @@
         </ul>
         </div>
       </section>
-    </main>
+    </main> 
    <footer class="page-footer">
       <div class="container footer">
         <div class="footer-text-container">
@@ -446,6 +512,6 @@
       <button type="submit" class="button-button-send">Send</button>
     </form>
    </div>
-  </div>
+  </div> 
   </body>
  </html>
